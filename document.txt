@@ -1,0 +1,8 @@
+How It Works:
+- Symmetric Encryption (AES-256-CBC):
+    - The key and IV are generated using crypto.randomBytes().
+    - Data is encrypted using crypto.createCipheriv() and decrypted using crypto.createDecipheriv().
+
+- Asymmetric Encryption (RSA):
+    - The RSA keys are generated using crypto.generateKeyPairSync().
+    - Data is encrypted with the public key using crypto.publicEncrypt() and decrypted with the private key using crypto.privateDecrypt().
